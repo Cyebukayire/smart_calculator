@@ -28,7 +28,9 @@ body {
 }
 
 .calculator-grid > button:hover {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: #3b6ab1;
+    color:white;
+    transition-duration: 0.5s;
 }
 
 .span-two {
@@ -37,7 +39,6 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    /* background-color: #14325e; */
     border: 5px solid white;
     display: flex;
     align-items: flex-end;

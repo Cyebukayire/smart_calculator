@@ -1,3 +1,4 @@
+console.log('connected to js successfully')
 class Calculator {
     constructor(previousOperandTextElement, currentOperandTextElement){
         this.previousOperandTextElement = previousOperandTextElement
@@ -95,11 +96,12 @@ const operationButtons = document.querySelectorAll('[data-operation]')
 const equalsButton = document.querySelectorAll('[data-equals]')
 const deleteButton = document.querySelectorAll('[data-delete]')
 const allClearButton = document.querySelectorAll('[data-all-clear]')
-const previousOperandButton = document.querySelectorAll('[data-previous-operand]')
-const currentOperandButton = document.querySelectorAll('[data-current-operand]')
+const previousOperandTextElement = document.querySelectorAll('[data-previous-operand]')
+const currentOperandTextElement = document.querySelectorAll('[data-current-operand]')
 
 
-const Calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
+
+const calculator = new Calculator(previousOperandTextElement, currentOperandTextElement)
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {

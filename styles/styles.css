@@ -28,7 +28,9 @@ body {
 }
 
 .calculator-grid > button:hover {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: #3b6ab1;
+    color:white;
+    transition-duration: 0.5s;
 }
 
 .span-two {
@@ -37,20 +39,19 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    background-color:#14325e;
-    border-color: white;
+    border: 5px solid white;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    padding: 10px;
+    padding: 20px;
     word-wrap: break-word;
     word-break: break-all;
 }
 
 .output .previous-operand {
     color: rgb(214, 217, 219);
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .output .current-operand {

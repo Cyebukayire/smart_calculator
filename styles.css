@@ -39,7 +39,7 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    border: 5px solid white;
+    border: 3px solid white;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
@@ -66,3 +66,102 @@ body {
 #delete{ background-color:rgb(248, 99, 99);}
 
 #equals{ background-color: rgb(51, 146, 51);}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 1024px) { 
+    .calculator-grid{
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+    }
+
+    .calculator-grid > button {
+        font-size: 2rem;    
+    }
+
+    .output .previous-operand {
+        font-size: 2.5rem;
+    }
+    
+    .output .current-operand {
+        font-size:2.8rem;
+    }
+}
+
+@media screen and (max-width: 414px) { 
+    .calculator-grid{
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: minmax(80px, auto) repeat(5, 80px);
+    }
+
+    .calculator-grid > button {
+        font-size: 1.5rem;    
+    }
+
+    .output .previous-operand {
+        font-size: 1.5rem;
+    }
+    
+    .output .current-operand {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media screen and (max-width: 375px) { 
+
+    .calculator-grid > button {
+        font-size: 1rem;    
+    }
+}
+
+@media screen and (max-width: 360px) { 
+    .calculator-grid{
+        grid-template-columns: repeat(4, 70px);
+    }
+
+    .output .previous-operand {
+        font-size: 1.2rem;
+    }
+    
+    .output .current-operand {
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 320px) { 
+    .calculator-grid{
+        grid-template-columns: repeat(4, 70px);
+        grid-template-rows: minmax(20px, auto) repeat(5, 80px);
+    }   
+}
+
+@media screen and (max-width: 280px) { 
+    .calculator-grid{
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: minmax(40px, auto) repeat(5, 50px);
+    }
+    
+}
+
+@media screen and (max-width: 240px) { 
+    .calculator-grid{
+        grid-template-columns: repeat(4, 50px);
+        grid-template-rows: minmax(20px, auto) repeat(5, 50px);
+    }
+
+    .calculator-grid > button {
+        font-size: 1rem;    
+    }
+
+    .output .previous-operand {
+        font-size: 1rem;
+    }
+    
+    .output .current-operand {
+        font-size: 1rem;
+    }
+    
+}
